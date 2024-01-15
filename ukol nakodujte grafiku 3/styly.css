@@ -1,0 +1,398 @@
+body {
+    color: white;
+    margin: 0;
+}
+
+.logo {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-color: #0071bd;
+    width: 100%;
+    height: 100px;
+    min-width: 1200px;
+}
+
+footer {
+    background-color: #662e91;
+    width: 100%;
+    height: 190px;
+    min-width: 1200px;
+}
+
+.centerFooter {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    margin: 0 auto;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto max-content 60px;
+    height: 100%;
+}
+
+#lupa,
+#triCary,
+nav {
+    background-color: #80b8df;
+    margin-top: 18px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: 60px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+#lupa {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+}
+
+main {
+    grid-column: 3 / span 12;
+    grid-row: 1;
+}
+
+aside {
+    grid-column: 12 / span 4;
+    grid-row: 1;
+}
+
+.g1 {
+    background-color: #fbb03b;
+    text-align: center;
+    height: 215px;
+    width: 208px;
+
+}
+
+.g2 {
+    background-color: #f15a25;
+    text-align: center;
+    height: 215px;
+    width: 285px;
+}
+
+.g3 {
+    background-color: #c2272d;
+    text-align: center;
+    height: 215px;
+    width: 437px;
+}
+
+.g4 {
+    background-color: #01a89e;
+    text-align: center;
+    height: 686px;
+    width: 282px;
+    margin-top: 20px;
+}
+
+.mobil {
+    display: none;
+}
+
+.g1,
+.g2,
+.g3 {
+    margin-right: 20px;
+}
+
+.radek {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    width: 385px;
+    height: 150px;
+    background-color: #b296c7;
+}
+
+#triCary {
+    display: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        height: 236px;
+        margin-top: 20px;
+        min-width: 800px;
+    }
+
+    .centerFooter {
+        margin: 20px auto;
+        width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 88px 88px;
+        grid-column: 1/2;
+        gap: 20px;
+    }
+
+    .center {
+        margin: 0 auto;
+        width: 800px;
+        display: grid;
+        grid-template-columns: auto 60px;
+        height: 100%;
+    }
+
+    #triCary {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .zmiz:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .zmiz:nth-child(2) {
+        grid-column-start: 2/3;
+        grid-row: 1/2;
+    }
+
+    .zmiz,
+    .treti {
+        height: 100%;
+    }
+
+    .treti {
+        width: 800px;
+        margin: auto;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    Header {
+        margin-bottom: 20px;
+        min-width: 800px;
+    }
+
+    .main {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    main {
+        grid-column: 1 / span 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    aside {
+        grid-column: 2 / span 2;
+        grid-row: 4;
+    }
+
+
+    .g1 {
+        width: 390px;
+        height: 215px;
+    }
+
+    .radek:nth-child(2) {
+        display: none;
+    }
+
+    .g3 {
+        width: 390px;
+        height: 215px;
+    }
+
+    .g4 {
+        width: 800px;
+        height: 215px;
+        margin-top: 0px;
+    }
+
+    .g1,
+    .g2,
+    .g3 {
+        margin-right: 0px;
+    }
+
+
+    .radek {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: unset;
+        margin-bottom: unset;
+        flex: unset;
+        gap: 20px;
+        margin-bottom: 20px;
+
+    }
+
+
+    p {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #lupa {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .centerFooter {
+        margin: 0px auto;
+        width: 320px;
+        display: grid;
+    }
+
+    nav {
+        display: none;
+    }
+    .radek:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .radek:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    .center {
+        margin: 0 auto;
+        width: 320px;
+        display: grid;
+        grid-template-columns: auto 60px;
+        height: 100%;
+    }
+
+    Header {
+        margin-bottom: 20px;
+        min-width: 320px;
+    }
+
+    #triCary {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .g1 {
+        width: 320px;
+        height: 90px;
+    }
+
+    .pryc {
+        display: none;
+    }
+
+    .g2 {
+        width: 320px;
+        height: 90px;
+    }
+
+    .mobil {
+        display: grid;
+    }
+
+    .g3 {
+        width: 320px;
+        height: 90px;
+    }
+
+    .g4 {
+        width: 320px;
+        height: 185px;
+        margin-top: 20px;
+    }
+
+    p {
+        flex: unset;
+        width: 320px;
+        height: 87px;
+    }
+
+    .zmiz {
+        display: none;
+    }
+
+    #lupa {
+        display: none;
+    }
+
+    aside,
+    main {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    aside {
+        margin: unset;
+    }
+
+    .g1,
+    .g2,
+    .g3 {
+        margin-right: 0px;
+    }
+
+    .radek {
+        grid-template-columns: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+        gap: 20px;
+    }
+
+    footer {
+        height: 125px;
+        min-width: 320px;
+        margin-top: 20px;
+    }
+}
